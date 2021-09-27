@@ -21,7 +21,7 @@ namespace WordUnscrambler
             List<String[]> arrayList = new List<String[]>();
 
             //fStream (attribute of name FileStream) will open and read file store in the following path position.
-            using (FileStream fStream = File.OpenRead(@" C: \Users\IT\Documents\.net programming\Lab2\wordlist.txt"))
+            using (FileStream fStream = File.OpenRead(filename))
             using (TextReader reader = new StreamReader(fStream))
             {
                 //empty string called line
