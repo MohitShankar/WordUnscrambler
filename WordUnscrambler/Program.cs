@@ -18,7 +18,8 @@ namespace WordUnscrambler
                 String option = " ";
 
 
-                
+                do
+                {
                     Console.WriteLine("Enter scrambled word(s) manually or as a file: F - file / M - manual");
 
                     option = Console.ReadLine() ?? throw new Exception("String is empty");
@@ -38,12 +39,17 @@ namespace WordUnscrambler
                         default:
                             Console.WriteLine("The entered option was not recognized.");
                             break;
-                   
-                }
+                    }
+
+                    //testing github commit
 
                    
 
-              Console.ReadLine();
+                } while (option.ToUpper() != "F" && option.ToUpper() != "M");
+
+                
+
+                Console.ReadLine();
 
 
             }
